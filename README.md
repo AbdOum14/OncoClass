@@ -26,3 +26,14 @@ This model is built with PyTorch and features:
 ***Figure 2: Learning dynamics across 15 epochs***
 
 **Interpretation:** The training logs indicate a healthy convergence of the hybrid model. The Loss Curve shows a steady decline without significant gaps between training and validation sets, ruling out overfitting. The Accuracy Curve reaches a plateau near 98-99% within the first 10 epochs, demonstrating that the latent features extracted by the Autoencoder are highly linearly separable for the classification head.
+
+### 3.SHAP for Biomarker Discovery
+<img width="800" height="900" alt="Image" src="https://github.com/user-attachments/assets/d126a45e-b005-465a-95c5-6a11074dc860" />
+
+***Figure 3: Learning dynamics across 15 epochs***
+
+**Interpretation:** By applying SHAP (SHapley Additive exPlanations), we identified the top 15 genetic features that drive the model's decisions. Unlike a 'black-box' approach, this plot highlights specific gene indices that act as biomarkers. High SHAP values for a particular gene indicate a strong influence on the probability of a specific cancer class. This interpretability layer is crucial for validating the model against known oncogenic drivers in the TCGA dataset.
+
+
+
+
