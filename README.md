@@ -14,7 +14,7 @@ This model is built with PyTorch and features:
 
 ## 📊 Performance & Interpretability
 ### 1.Manifold Learning (UMAP)
-<img width="1000" height="700" alt="Image" src="https://github.com/user-attachments/assets/cf04656b-3b85-4bab-b542-2d9b9b269e04" />
+<img width="800" height="500" alt="Image" src="https://github.com/user-attachments/assets/cf04656b-3b85-4bab-b542-2d9b9b269e04" />
 
 ***Figure 1: UMAP visualization of the latent space***
 
