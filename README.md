@@ -19,3 +19,10 @@ This model is built with PyTorch and features:
 ***Figure 1: UMAP visualization of the latent space***
 
 **Interpretation:** The UMAP plot shows a clear spatial separation of cancer subtypes. Each cluster represents a distinct transcriptomic signature captured by the **DeepOncoClass** encoder. The high degree of clustering suggests that the model effectively reduced the 20,531 dimensions into a meaningful 64-dimensional latent space, separating biological categories(e.g., BRCA,LUAD) with minimal overlap.
+
+### 2.Training Curves (Loss & Accuracy)
+<img width="1000" height="300" alt="Image" src="https://github.com/user-attachments/assets/316863dd-5e55-48c3-8b31-9bbf828a450b" />
+
+***Figure 2: Learning dynamics across 15 epochs***
+
+**Interpretation:** The training logs indicate a healthy convergence of the hybrid model. The Loss Curve shows a steady decline without significant gaps between training and validation sets, ruling out overfitting. The Accuracy Curve reaches a plateau near 98-99% within the first 10 epochs, demonstrating that the latent features extracted by the Autoencoder are highly linearly separable for the classification head.
