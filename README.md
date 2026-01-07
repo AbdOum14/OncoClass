@@ -35,14 +35,14 @@ This model is built with PyTorch and features:
 **Interpretation:** By applying SHAP (SHapley Additive exPlanations), we identified the top 15 genetic features that drive the model's decisions. Unlike a 'black-box' approach, this plot highlights specific gene indices that act as biomarkers. High SHAP values for a particular gene indicate a strong influence on the probability of a specific cancer class. This interpretability layer is crucial for validating the model against known oncogenic drivers in the TCGA dataset.
 
 ### 4.Confusion Matrix
-<img width="900" height="700" alt="Image" src="https://github.com/user-attachments/assets/6d8bdeea-0230-48c3-8e07-cc228ddcb365" />
+<img width="800" height="600" alt="Image" src="https://github.com/user-attachments/assets/6d8bdeea-0230-48c3-8e07-cc228ddcb365" />
 
 ***Figure 4: Confusion Matrix for multi-class classification***
 
 **Interpretation:** The Confusion Matrix displays the model's performance on the hold-out test set. The strong diagonal trend confirms high precision and recall across all five cancer types. Minimal misclassifications (e.g., between LUAD and KIRC) reflect the high sensitivity of the **DeepOncoClass** architecture in detecting subtle differences in gene expression profiles
 
 ### 5.Expression Heatmap (Top Differential Genes)
-<img width="995" height="833" alt="Image" src="https://github.com/user-attachments/assets/7dbe1ba9-d15b-4374-ba2b-e1d5b21a6739" />
+<img width="895" height="733" alt="Image" src="https://github.com/user-attachments/assets/7dbe1ba9-d15b-4374-ba2b-e1d5b21a6739" />
 
 ***Figure 5: Heatmap of top-ranked genes across cancer subtypes***
 
