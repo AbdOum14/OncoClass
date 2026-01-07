@@ -30,10 +30,20 @@ This model is built with PyTorch and features:
 ### 3.SHAP for Biomarker Discovery
 <img width="600" height="700" alt="Image" src="https://github.com/user-attachments/assets/d126a45e-b005-465a-95c5-6a11074dc860" />
 
-***Figure 3: Learning dynamics across 15 epochs***
+***Figure 3: Biomarkers for the top 15 genes***
 
 **Interpretation:** By applying SHAP (SHapley Additive exPlanations), we identified the top 15 genetic features that drive the model's decisions. Unlike a 'black-box' approach, this plot highlights specific gene indices that act as biomarkers. High SHAP values for a particular gene indicate a strong influence on the probability of a specific cancer class. This interpretability layer is crucial for validating the model against known oncogenic drivers in the TCGA dataset.
 
+### 4.Confusion Matrix
+<img width="900" height="700" alt="Image" src="https://github.com/user-attachments/assets/6d8bdeea-0230-48c3-8e07-cc228ddcb365" />
 
+***Figure 4: Confusion Matrix for multi-class classification***
 
+**Interpretation:** The Confusion Matrix displays the model's performance on the hold-out test set. The strong diagonal trend confirms high precision and recall across all five cancer types. Minimal misclassifications (e.g., between LUAD and KIRC) reflect the high sensitivity of the **DeepOncoClass** architecture in detecting subtle differences in gene expression profiles
 
+### 5.Expression Heatmap (Top Differential Genes)
+<img width="995" height="833" alt="Image" src="https://github.com/user-attachments/assets/7dbe1ba9-d15b-4374-ba2b-e1d5b21a6739" />
+
+***Figure 5: Heatmap of top-ranked genes across cancer subtypes***
+
+**Interpretation:** This heatmap illustrates the expression patterns of the most significant genes across the five cancer classes. The hierarchical clustering on the axes groups patients with similar transcriptomic profiles, revealing distinct blocks of overexpressed (red/warm) and underexpressed (blue/cold) genes unique to each tumor type. These patterns validate the model's ability to distinguish between cancers like COAD and BRCA based on specific gene 'signatures' or clusters, rather than isolated features
